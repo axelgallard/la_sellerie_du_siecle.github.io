@@ -1,0 +1,1 @@
+Avant d'utiliser le site internet il est important de noter qu'il a été conçu pour des écran de grande taille ce qui peut entrainer des problèmes si il est utlisé avec des écrans de petite taille

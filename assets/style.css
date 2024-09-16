@@ -1,0 +1,629 @@
+/* CSS général */
+* {
+    font-family: 'Lexend';
+}
+
+/* CSS dédié au <body> */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    background-color: #F6EBDA;  /* patch de sécurité pour la couleur de fond pour TOUTES les pages */
+}
+
+/* CSS dédié au <header> */
+header {
+    display: grid;
+    grid-template-columns: 325px 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #F6EBDA;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header p{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header p:hover{
+    text-decoration: underline;
+}
+
+header .current{
+    color: #FF902B;
+}
+
+/* CSS dédié au <main> */
+main {
+    padding-top: 85px;
+}
+
+/* CSS dédié au <footer> */
+footer {
+    background-color: #F9D9AA;
+    right: 0px;
+    height: 110px;
+}
+
+footer .Media {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr 1fr 20%;
+    align-items: center;
+    justify-items: center;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+}
+
+footer .Media .Link {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .Copyright {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    bottom:0px;
+}
+
+/* CSS de a-Propos.html */
+#aPropos h2 {
+    margin-top: 15px;
+}
+
+#aPropos .decorateur {
+    border-bottom: 3px solid #FF902B;
+}
+
+#aPropos .sous-texte {
+    color: #7E7D7A;
+}
+
+#aPropos .bandeau {
+    height: 350px;
+    margin: 20px;
+    margin-top: 150px;
+    border-radius: 30px;
+    background-color: #F9D9AA;
+    background-image: url(assets/decos.png);
+    display: flex;
+}
+
+#aPropos #notreHistoire {
+    position: relative;
+    right: 30px;
+    border-radius: 0;
+    margin-right: 200px;
+}
+
+#aPropos #notreHistoire img {
+    border-radius: 50%;
+    bottom: 85px;
+    left: 160px;
+}
+
+#aPropos #notreHistoire img {
+    border-radius: 50%;
+    bottom: 85px;
+    left: 160px;
+}
+
+#aPropos #nosContributeurs  {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#aPropos #nosContributeurs img {
+    bottom: 60px;
+    left: 40px;
+}
+
+#aPropos #nosContributeurs .content {
+    margin-left: 100px;
+}
+
+#aPropos #nosFournisseurs .content {
+    margin-right: 100px;
+}
+
+#aPropos #nosFournisseurs img {
+    bottom: 60px;
+    right: 50px;
+}
+
+#aPropos img {
+    position: relative;
+    border-radius: 15px;
+    border: 5px white solid;
+    box-shadow: 0px 10px 50px black;
+}
+
+#aPropos .content {
+    margin: 50px;
+}
+
+/* CSS de contact.html */
+#contact {
+    background-color: #F6EBDA;
+}
+
+#contact main {
+    padding: 0px;
+    margin: 0px;
+}
+
+#contact .imagePrincipale {
+    position: relative;
+    top:50px;
+    left:50px;
+    border-radius: 21px;
+    margin-bottom: 50px;
+    width:765px;
+}
+
+#contact .zoneCollab {
+    position: absolute;
+    bottom:35%;
+    left:80%;
+    background-color: #F9D9AA;
+    padding: 14px;
+    border-radius: 15px;
+}
+
+#contact .zoneCollab p {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#contact .zoneCollab .mail {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#contact .zoneInfo {
+    position: absolute;
+    left: 950px;
+    top: 25%;
+    width: 300px;
+}
+
+#contact .zoneInfo p {
+    color: #3F3F3F;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#contact .zoneInfo .titre {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#contact .zoneInscription {
+    width: 1000px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    left: 20px;
+    bottom: 0px;
+}
+
+#contact .zoneInscription img {
+    margin: 0px;
+    padding: 0px;
+    width: 1170px;
+    height: 217px;
+}
+
+
+#contact .zoneInscription p {
+    position: relative;
+    bottom:200px;
+    width: 1170px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.28px;
+}
+
+#contact .zoneInscription .subscribeBar {
+    position: relative;
+    bottom:220px;
+    left:35%;
+    width: 486px;
+    height: 46.411px;
+    border-radius: 21px;
+    background: #FFF;
+}
+
+#contact .zoneInscription .subscribeBar p {
+    top:25%;
+    left:10px;
+    color: #7E7D7A;
+    text-align: left;
+    /* font-family: 'Poppins'; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+#contact .zoneInscription .subscribeBar .subscribeButton {
+    position: relative;
+    bottom:37px;
+    left:322px;
+    background-color: #2F2105;
+    border-radius: 21px;
+    width: 140px;
+    height:20px;
+    padding:10px;
+    cursor: pointer;
+}
+
+#contact .zoneInscription .subscribeBar .subscribeButton p {
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    top:-20%;
+    text-align: center;
+}
+
+#contact .zoneInscription .subscribeBar .subscribeButton:hover {
+    background-color: #FF902B;
+}
+
+/* CSS de accueil.html */
+#accueil h2 {
+    margin-top: 15px;
+}
+
+#accueil {
+    background-color: #F6EBDA;
+}
+
+/* Haut de page */
+
+#accueil .zoneSloganEtImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#accueil .zoneSlogan {
+    color: #2F2105;
+    font-family: 'Lexend';
+    font-size: 46px;
+    width: 30%;
+}
+
+#accueil .BestSeller img {
+    width: 416px;
+    height: 416px;
+}
+
+#accueil .zoneSloganPetit {
+    color: #7E7D7A;
+    font-family: 'Lexend';
+    font-size: 18px;
+    width: 80%;
+    position: relative;
+}
+
+#accueil .ProduitButton {
+    background-color: #2F2105;
+    text-decoration: none;
+    color: #FFF;
+    display: flex;
+    width: 148px;
+    height: 46px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 360px;
+}
+
+/* Milieu de page */
+
+#accueil .zoneHistoire {
+    height: 350px;
+    margin: 20px;
+    margin-top: 150px;
+    border-radius: 30px;
+    background-color: #F9D9AA;
+    background-image: url(images//DecoSelle.png);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#accueil .zoneHistoire img {
+    bottom: 60px;
+    left: 200px;
+    position: relative;
+    border-radius: 15px;
+    border: 5px white solid;
+}
+
+#accueil .zoneHistoire .content {
+    margin-left: 300px;
+}
+
+#accueil .sous-texte {
+    color: #7E7D7A;
+    width: 50%;
+}
+
+.decorateur {
+    border-bottom: 4px solid #FF902B;
+}
+
+#accueil .couleurOrange {
+    color: #FFA800;
+}
+
+#accueil .VoirProduitButton{
+    background-color: #2F2105;
+    text-decoration: none;
+    color: #F4AE26;
+    display: flex;
+    width: 301px;
+    height: 76px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 360px;
+}
+
+/* Bas de page */
+
+#accueil .zoneProduitPhare {
+    padding-top: 20px;
+    padding-left: 116px;
+}
+
+#accueil .ProduitsPhare {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#accueil .ProduitPhare1,
+#accueil .ProduitPhare2,
+#accueil .ProduitPhare3 {
+    border-radius: 20px;
+    width: 343.966px;
+    height: 372px;
+    background-color: #F4AE26;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* CSS de la page Produit */
+
+#produit {
+    background-color: #F6EBDA;
+}
+
+main section {
+    margin: 50px;
+    width: 60%;
+    padding-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+main section h2.title {
+    padding-left: 15px;
+}
+
+main section .sectionContent {
+    position: relative;
+    display: flex;
+    width: auto;
+}
+
+main span.contentDeco {
+    background-color: #F9D9AA;
+    position:  absolute;
+    border-radius: 15px;
+    bottom: -50px;
+    left:   -10px;
+    height: 250px;
+    width: 1150px;
+    z-index:  000;
+}
+
+/* CSS du cadre de notation */
+main .noteCadre {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #7E7D7A;
+}
+
+main .noteCadreInt {
+    background-color: #FFFFFF;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 62px;
+    height: 26px;
+    border-radius: 8px;
+    display: inline-flex;
+}
+
+
+main .Item div img[src="asset/etoile.svg"] {
+    height: 14px;
+    width: 14px;
+}
+
+main .noteCadreInt p + img {
+    margin: auto;
+}
+
+main .noteCadreInt p {
+    margin-top: 0;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+/* CSS d'Item de Vente */
+
+/* Contenu général de l'affichage */
+main .Item {
+    background-color: #7E7D7A;
+    border-radius: 12px;
+    min-width:  356px;
+    max-width:  356px;
+    min-height: 385px;
+    max-height: 385px;
+    margin: 10px;
+    z-index: 001;
+}
+
+main .ItemInt {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position:  relative;
+    width:  96%;
+    height: 96%;
+    margin: 02%;
+    bottom: 02%;
+}
+
+main .cadreImg {
+    position:  relative;
+    border-radius: 10px;
+    top:   15px;
+    width:  90%;
+    height: 60%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+main .cadreImg img {
+    border-radius: 10px;
+    height: 100%;
+    width:  100%;
+}
+
+main .Item h2 {
+    height: 40%;
+}
+
+main h4 {
+    color: #7E7D7A;
+    font-size: small;
+    width:  60%;
+    height: 60%;
+}
+
+main .ItemContent {
+    position: absolute;
+    font-size: large;
+    bottom: 0px;
+    margin: 05%;
+    width:  86%;
+    height: 25%;
+    padding: 2%;
+}
+
+img[src="asset/linkArrow.svg"] {
+    background-color: #FF902B;
+    border-radius: 50%;
+    position: absolute;
+    height: 43px;
+    width:  43px;
+    top:    05px;
+    right:  20px;
+}
+
+.Arrow {
+    background-color: #FF902B;
+    background-image: url(images//linkArrow.svg);
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    height: 43px;
+    width:  43px;
+    top:    05px;
+    right:  20px;
+}
+
+main p.price {
+    background-color: #FF902B;
+    position:  absolute;
+    border-radius: 12px;
+    font-weight:   bold;
+    text-align:  center;
+    padding: 10px;
+    top:     05px;
+    right:   20px;
+}
+
+main nav {
+    height: 70px;
+    padding-top: 50px;
+}
+
+main nav a {
+    background-color: #F9D9AA;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 65px;
+    font-size: x-large;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: black;
+
+    transition: all 0.1s ease;
+}
