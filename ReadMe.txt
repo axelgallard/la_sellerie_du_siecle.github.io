@@ -1,1 +1,1 @@
-Avant d'utiliser le site internet il est important de noter qu'il a été conçu pour des écran de grande taille ce qui peut entrainer des problèmes si il est utlisé avec des écrans de petite taille
+Ce site n'est pas optimisé pour une utilisation sur des écrans de petite taille. Pour une expérience optimale, il est recommandé de l'utiliser avec un écran d'ordinateur au format 16:9.
